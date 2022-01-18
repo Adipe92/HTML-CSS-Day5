@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav bar</title>
+    <style>
+        nav {
+            top: 0px;
+            height: 70px;
+            line-height: 60px;
+            background-color: rgb(194, 192, 192);
+            text-align: center;
+        }
+
+        li {
+            width: 100px;
+            display: inline-block;
+            padding: 5px;
+            font-size: 1em;
+            text-transform: uppercase;
+            color: gray;
+            transition: color 2s;
+        }
+
+        li:hover {
+            color: white;
+        }
+
+        .home {
+            background-color: bisque;
+            transition: background-color 3s;
+        }
+
+        .home:hover {
+            background-color: black;
+        }
+
+        .about {
+            background-color: bisque;
+            transition-property: width, background-color;
+            transition-duration: 5s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 200ms;
+        }
+
+        .about:hover {
+            width: 300px;
+            background-color: red;
+        }
+
+        .gallery {
+            background-color: bisque;
+            transition: color 3s ease-in-out, font-size 2s ease-in-out, background-color 2s ease-in-out;
+        }
+
+        .gallery:hover {
+            color: black;
+            background-color: pink;
+            font-size: 20px;
+        }
+
+
+        .news {
+            height: 60px;
+            background-color: bisque;
+            transition: height 2s ease-in-out, font-size 500ms;
+        }
+
+        .news:hover {
+            height: 100px;
+            background-color: blue;
+            text-transform: lowercase;
+            font-size: 10px;
+        }
+
+        .contact {
+            background-color: bisque;
+            transition: width 100ms, background-color 500ms ease-out;
+        }
+
+        .contact:hover {
+            background-color: green;
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <Ul>
+            <li class="home">Home</li>
+            <li class="about">About</li>
+            <li class="gallery">Gallery</li>
+            <li class="news">News</li>
+            <li class="contact">Contact</li>
+        </Ul>
+    </nav>
+</body>
+
+</html>
